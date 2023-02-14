@@ -1,0 +1,255 @@
+/* Root */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+
+header {
+    margin: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a {
+    color: white;
+    margin-right: 10px;
+}
+
+#apps {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 20px;
+}
+
+#apps:hover {
+    cursor: pointer;
+}
+
+#apps-div {
+    display: none;
+    border: 2px solid #161616;
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #303030;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.apps-circle {
+    border: 2px solid #bdbdbd;
+    border-radius: 50%;
+}
+
+#profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #808080;
+    margin-top: -6px;
+}
+
+#profile:hover {
+    cursor: pointer;
+}
+
+/* Body */
+
+#container {
+    text-align: center;
+    padding: 50px;
+}
+
+#container a {
+    color: #588cf6;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+#searchbar {
+    border: 1px solid #808080;
+    border-radius: 25px;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+#searchbar:hover {
+    background-color: #303030;
+    border: none;
+    padding: 1px;
+}
+
+#searchbar input {
+    width: 500px;
+    height: 40px;
+    background-color: #232323;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+#searchbar input:hover {
+    background-color: #303030;
+}
+
+#searchbar input:focus {
+    outline: none;
+}
+
+#search-logo {
+    padding-right: 20px;
+}
+
+#search-circle {
+    border: 2px solid #808080;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#search-line {
+    border: 1px solid #808080;
+    transform: rotate(45deg);
+    width: 8px;
+    left: 20px;
+    top: 10px;
+    position: relative;
+}
+
+#camera {
+    padding-left: 20px;
+}
+
+#camera:hover {
+    cursor: pointer;
+}
+
+#outline {
+    border: 2px solid #588cf6;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+#circle {
+    width: 7.5px;
+    height: 7.5px;
+    background-color: #588cf6;
+    border-radius: 50%;
+    margin: 25%;
+}
+
+#shutter {
+    width: 5px;
+    height: 3px;
+    position: relative;
+    background-color: #588cf6;
+    top: 12px;
+    right: 3px;
+    border-radius: 5px;
+}
+
+#buttons {
+    margin: 20px auto;
+}
+
+button {
+    color: white;
+    background-color: #303030;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: auto 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid #808080;
+    padding: 9px 14px;
+}
+
+p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #161616;
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+}
+
+footer p {
+    color: #b4b4b4;
+    margin: 10px 20px;
+    font-size: 16px;
+}
+
+#footerdiv {
+    border-top: 3px solid #232323;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #b4b4b4;
+    margin-right: 10px;
+}
+
+#leftfooter, #rightfooter {
+    margin: 20px;
+    font-size: 14px;
+}
+
+@media (max-height: 500px) {
+    footer {
+        position: initial;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    #searchbar input {
+        width: 60vw;
+    }
+}

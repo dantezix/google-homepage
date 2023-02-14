@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet" />
+        <script src="script.js"></script>
+        <title>Google</title>
+    </head>
+    <body>
+        <header>
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <div id="apps" onclick="showApps()">
+                <div class="row">
+                    <div class="apps-circle"></div>
+                    <div class="apps-circle"></div>
+                    <div class="apps-circle"></div>
+                </div>
+                <div class="row">
+                    <div class="apps-circle"></div>
+                    <div class="apps-circle"></div>
+                    <div class="apps-circle"></div>
+                </div>
+                <div class="row">
+                    <div class="apps-circle"></div>
+                    <div class="apps-circle"></div>
+                    <div class="apps-circle"></div>
+                </div>
+            </div>
+            <div id="apps-div"></div>
+            <div id="profile"></div>
+        </header>
+        <div id="container" onclick="hideApps()">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="google logo" id="logo"/>
+            <div id="searchbar">
+                <div id="search-logo">
+                    <div id="search-circle"></div>
+                    <div id="search-line"></div>
+                </div>
+                <input type="text" />
+                <div id="camera">
+                    <div id="shutter"></div>
+                    <div id="outline">
+                        <div id="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+            <p>Google offered in: <a href="">ქართული</a></p>
+            
+        </div>
+        <footer onclick="hideApps()">
+            <p>Georgia</p>
+            <div id="footerdiv">
+                <div id="leftfooter">
+                    <a href="">About</a>
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search Works</a>
+                </div>
+                <div id="rightfooter">
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
